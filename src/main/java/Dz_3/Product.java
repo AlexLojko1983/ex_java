@@ -19,6 +19,13 @@ public class Product {
         return availableQuantity;
     }
 
+    public void setAvailableQuantity(int availableQuantity) throws NotEnoughQuantityException {
+        if(availableQuantity < 0){
+            throw new NotEnoughQuantityException("Недостаточно товара!");
+        }
+        this.availableQuantity = availableQuantity;
+    }
+
     public double getPrice() {
         return price;
     }

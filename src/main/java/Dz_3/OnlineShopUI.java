@@ -3,7 +3,7 @@ package Dz_3;
 import java.util.Scanner;
 
 public class OnlineShopUI {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter product ID: ");
         int productId = scanner.nextInt();
